@@ -1,8 +1,108 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+// start header
+
+.header__top{
+    background-color: #eef1f3;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__top-inner{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    &-text{
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 5px;
+        span{
+            margin-left: -9px;
+            color: $blue;
+        }
+    }
+}
+.header__top-btn{
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 14px;
+    line-height: 28px;
+    a{
+        color: #fff;
+        padding: 9px 18px;
+        background-color: $blue;
+        display: block;
+        border-radius: 30px;
+    }
+}
+.header__top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.header__top-info{
+    line-height: 22px;
+}
+.header__top-autor{
+    font-weight: 500;
+}
+.header__top-price{
+    color: $blue;
+    font-size: 16px;
+}
+.header__menu-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}
+.header__menu-items{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    & + li{
+        margin-left: 30px;
+    }
+}
+.header__menu-form{
+    max-width: 360px;
+    position: relative;
+    input{
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding-left: 23px;
+        padding-right: 75px;
+        border: 1px solid #d9dfe5;
+        border-radius: 20px;
+        outline: none;
+    }
+    button{
+        outline: none;
+        position: absolute;
+        border: none;
+        background-color: $blue;
+        right: 0;
+        top: 0;
+        padding: 13px 27px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+// end header
+
+// box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
