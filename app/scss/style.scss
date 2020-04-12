@@ -799,3 +799,124 @@
     line-height: 30px;
 }
 // end choose
+
+
+// start sell
+.sell__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.left-box,
+.right-box{
+    padding: 100px 0;
+    width: 100%;
+    border:transparent;
+}
+.left-box,
+.right-box,
+.box__images{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left-box{
+    background-image: url('../images/content/left-bg.jpg');  
+}
+.right-box{
+    background-image: url('../images/content/right-bg.jpg');
+}
+.box-item{
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+.box__images{
+    margin: 0 auto;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 45px;
+}
+.box__images-right{
+    width: 100px;
+}
+.box__title{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.box__text{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+.box__button{
+    font-size: 16px;
+    padding: 20px 25px;
+    border-radius: 27.5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: $blue;
+}
+.box__button-right{
+    color: $purple;
+}
+// end
+
+
+// start feedback
+.feedback{
+    padding: 115px 0 120px;
+}
+.feedback__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item{
+    max-width: 555px;
+    width: 100%;
+    padding: 50px 38px;
+    border-left: 2px solid $blue;
+    border-radius: 0 4px 4px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 80px;
+}
+.feedback__info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.feedback__info-avatar{
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+.author-name{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 13px;
+}
+.author-specialty{
+    font-size: 16px;
+    color: $grey;
+}
+.author-icon{
+    margin-left: auto;
+}
+.feedback__button{
+    text-align: center;
+}
+.feedback__link{
+    background-color: $blue;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    padding: 20px 34px;
+}
+// end feedback
