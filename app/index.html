@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARTPLACE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,11 +16,9 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a href="#"><img src="images/logo.png" alt=""></a>
-                    </div>
+                    <a class="header__logo" href="#"><img src="images/logo.png" alt=""></a>
                     <div class="header__top-btn">
-                        <a href="#">Become a Seller</a>
+                        <a class="header__top-link" href="#">Become a Seller</a>
                     </div>
                     <div class="header__top-alerts">
                         <a href="#" style="background-image: url('images/icons/alarm.png');"><span>25</span></a>
@@ -44,18 +42,18 @@
                 <div class="header__menu-inner">
                     <nav class="menu">
                         <ul class="menu-list">
-                            <li class="header__menu-items"><a href="#">home</a></li>
-                            <li class="header__menu-items"><a href="#">all</a></li>
-                            <li class="header__menu-items"><a href="#">products</a></li>
-                            <li class="header__menu-items"><a href="#">wordpress</a></li>
-                            <li class="header__menu-items"><a href="#">festures</a></li>
-                            <li class="header__menu-items"><a href="#">Pages</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">home</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">all</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">products</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">wordpress</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">festures</a></li>
+                            <li class="header__menu-items"><a class="header__menu-link" href="#">Pages</a></li>
                         </ul>
                     </nav>
                     <div class="header__menu-form">
-                        <form>
-                            <input type="text" placeholder="Search product here..." required>
-                            <button>
+                        <form class="header-form">
+                            <input class="header-input" type="text" placeholder="Search product here..." required>
+                            <button class="header__menu-button">
                                 <img src="images/icons/search.png" alt="">
                             </button>
                         </form>
@@ -78,19 +76,19 @@
                     MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                 </div>
                 <div class="product__button">
-                    <a href="#">View All Products</a>
-                    <a href="#">Popular Products</a>
+                    <a class="product__button-link" href="#">View All Products</a>
+                    <a class="product__button-link" href="#">Popular Products</a>
                 </div>
-                <div class="search">
+                <div class="product-box">
                     <div class="search__form">
-                        <form>
-                            <input type="text" placeholder="Search your products...">
-                            <select name="" id="">
-                                <option value="">All Categories</option>
-                                <option value="">All Categories</option>
-                                <option value="">All Categories</option>
+                        <form class="product-box__form">
+                            <input class="product-box__input" type="text" placeholder="Search your products...">
+                            <select class="product-box__select" name="" id="">
+                                <option class="product-box__option" value="">All Categories</option>
+                                <option class="product-box__option" value="">All Categories</option>
+                                <option class="product-box__option" value="">All Categories</option>
                             </select>
-                            <button type="submit">Search Now</button>
+                            <button class="product-box__button" type="submit">Search Now</button>
                         </form>
                     </div>
                 </div>
@@ -102,7 +100,7 @@
         <div class="container">
             <div class="services__items">
                 <div class="services__item">
-                    <img src="images/content/services__item-1.png" alt="">
+                    <img class="services__item-images" src="images/content/services__item-1.png" alt="">
                     <div class="services__item-title">
                         Best UX Research
                     </div>
@@ -114,7 +112,7 @@
                 </div>
 
                 <div class="services__item">
-                    <img src="images/content/services__item-2.png" alt="">
+                    <img class="services__item-images" src="images/content/services__item-2.png" alt="">
                     <div class="services__item-title">
                         Fully Responsive
                     </div>
@@ -126,7 +124,7 @@
                 </div>
 
                 <div class="services__item">
-                    <img src="images/content/services__item-3.png" alt="">
+                    <img class="services__item-images" src="images/content/services__item-3.png" alt="">
                     <div class="services__item-title">
                         Buy & Sell Easily
                     </div>
@@ -177,22 +175,20 @@
                             ut scelerisque.
                         </div>
                         <div class="slider__info-buttons">
-                            <a href="#">website</a>
-                            <a href="#">plugin</a>
-                            <a href="#">landing page</a>
+                            <a class="slider__info-button" href="#">website</a>
+                            <a class="slider__info-button" href="#">plugin</a>
+                            <a class="slider__info-button" href="#">landing page</a>
                         </div>
                         <div class="info__bottom">
                             <a href="#" class="info__bottom-price">
                                 $10 - $50
                             </a>
-                            <!-- <div class="info__bottom-assessment"> -->
                             <a href="#" class="info__bottom-like">
                                 46
                             </a>
                             <a href="#" class="info__bottom-basket">
                                 634
                             </a>
-                            <!-- </div> -->
                             <div class="link-rating"></div>
                         </div>
                     </div>
@@ -308,21 +304,23 @@
                 </div>
             </div>
             <div class="release__buttons">
-                <button type="button" data-filter=".category-plugins">Plugins</button>
-                <button type="button" data-filter=".category-wordpress">WordPress</button>
-                <button type="button" data-filter=".category-sitetemplate">Site Template</button>
-                <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
-                <button type="button" data-filter=".category-joomla">Joomla</button>
-                <button type="button" data-filter=".category-userinterface">User Interface</button>
-                <button type="button" data-filter=".category-landingpage">Landing Page</button>
-                <button type="button" data-filter=".category-software">Software</button>
+                <button class="release-button" type="button" data-filter=".category-plugins">Plugins</button>
+                <button class="release-button" type="button" data-filter=".category-wordpress">WordPress</button>
+                <button class="release-button" type="button" data-filter=".category-sitetemplate">Site Template</button>
+                <button class="release-button" type="button" data-filter=".category-psdtemplate">PSD Template</button>
+                <button class="release-button" type="button" data-filter=".category-joomla">Joomla</button>
+                <button class="release-button" type="button" data-filter=".category-userinterface">User
+                    Interface</button>
+                <button class="release-button" type="button" data-filter=".category-landingpage">Landing Page</button>
+                <button class="release-button" type="button" data-filter=".category-software">Software</button>
             </div>
             <div class="common-inner">
-                <div class="common__item mix category-wordpress category-plugins category-psdtemplate category-userinterface category-software">
+                <div
+                    class="common__item mix category-wordpress category-plugins category-psdtemplate category-userinterface category-software">
                     <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
                         <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
                         </div>
                     </div>
                     <div class="common__info-top">
@@ -352,11 +350,12 @@
                     </div>
                 </div>
 
-                <div class="common__item mix category-wordpress category-sitetemplate category-psdtemplate category-userinterface category-landingpage">
+                <div
+                    class="common__item mix category-wordpress category-sitetemplate category-psdtemplate category-userinterface category-landingpage">
                     <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
                         <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
                         </div>
                     </div>
                     <div class="common__info-top">
@@ -386,46 +385,12 @@
                     </div>
                 </div>
 
-                <div class="common__item mix category-plugins category-sitetemplate category-joomla category-userinterface category-software">
+                <div
+                    class="common__item mix category-plugins category-sitetemplate category-joomla category-userinterface category-software">
                     <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
                         <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="common__info-top">
-
-                        <div class="common__title">
-                            E-commerce Shopping Cart
-                        </div>
-                        <div class="common__author-info">
-                            <a href="#" class="common-avatar"
-                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
-                            <a class="author__name">
-                                Theme-Valley
-                            </a>
-                            <a href="#" class="cms">
-                                Plugin
-                            </a>
-                        </div>
-                        <div class="common-text">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                            the mattis, leo quam aliquet congue.
-                        </div>
-                    </div>
-                    <div class="common__info-bottom">
-                        <a href="#" class="price">$20</a>
-                        <a href="#" class="like">90</a>
-                        <div class="star-rating"></div>
-                        <a href="#" class="basket">246</a>
-                    </div>
-                </div>
-
-                <div class="common__item mix category-wordpress category-sitetemplate category-joomla category-userinterface category-landingpage">
-                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
-                        <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
                         </div>
                     </div>
                     <div class="common__info-top">
@@ -456,11 +421,48 @@
                     </div>
                 </div>
 
-                <div class="common__item mix category-plugins category-sitetemplate category-psdtemplate category-joomla">
+                <div
+                    class="common__item mix category-wordpress category-sitetemplate category-joomla category-userinterface category-landingpage">
                     <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
                         <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div
+                    class="common__item mix category-plugins category-sitetemplate category-psdtemplate category-joomla">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                        <div class="images__links">
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
                         </div>
                     </div>
                     <div class="common__info-top">
@@ -490,11 +492,12 @@
                     </div>
                 </div>
 
-                <div class="common__item mix category-wordpress category-sitetemplate category-joomla category-userinterface category-landingpage category-newproducts">
+                <div
+                    class="common__item mix category-wordpress category-sitetemplate category-joomla category-userinterface category-landingpage category-newproducts">
                     <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
                         <div class="images__links">
-                            <a href="#">More info</a>
-                            <a href="#">Live Demo</a>
+                            <a class="images-link" href="#">More info</a>
+                            <a class="images-link" href="#">Live Demo</a>
                         </div>
                     </div>
                     <div class="common__info-top">
@@ -526,7 +529,354 @@
                 </div>
             </div>
             <div class="bottom__btn">
-                <button type="button" data-filter=".category-newproducts">All New Products</button>
+                <button class="btn" type="button" data-filter=".category-newproducts">All New Products</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="followers">
+        <div class="container">
+            <div class="title">
+                <span>Weekly Featured Products</span>
+                <div class="arrow followers-arrow">
+
+                </div>
+            </div>
+            <div class="common-inner followers-slider">
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+
+                <div class="common__item">
+                    <div class="common__images" style="background-image: url('images/slider/slider-img.jpg');">
+                    </div>
+                    <div class="common__info-top">
+
+                        <div class="common__title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="common__author-info">
+                            <a href="#" class="common-avatar"
+                                style="background-image: url('images/slider/slider__avatar.jpg');"></a>
+                            <a class="author__name">
+                                Theme-Valley
+                            </a>
+                            <a href="#" class="cms">
+                                Plugin
+                            </a>
+                        </div>
+                        <div class="common-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+                    <div class="common__info-bottom">
+                        <a href="#" class="price">$20</a>
+                        <a href="#" class="like">90</a>
+                        <div class="star-rating"></div>
+                        <a href="#" class="basket">246</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="container">
+            <div class="items__inner">
+                <div class="item">
+                    <a href="#" class="item__value item__value-one">
+                        38,436
+                    </a>
+                    <div class="item__text">
+                        items for sale
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item__value item__value-two">
+                        3,736
+                    </a>
+                    <div class="item__text">
+                        total sales
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item__value item__value-three">
+                        2,736
+                    </a>
+                    <div class="item__text">
+                        happy customers
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item__value item__value-for">
+                        25,736
+                    </a>
+                    <div class="item__text">
+                        members
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose">
+        <div class="container">
+            <div class="title-box">
+                <div class="title-box__title">
+                    Why Choose <span>MartPlace</span>
+                </div>
+                <div class="text">
+                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
+                    est laborum dolo
+                    rumes fugats untras.
+                </div>
+            </div>
+            <div class="choose__inner">
+                <div class="choose__item">
+                    <span class="choose__item-number">01</span>
+                    <div class="lnr-license choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+
+                <div class="choose__item">
+                    <span class="choose__item-number">02</span>
+                    <div class="lnr-magic-wand choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+
+                <div class="choose__item">
+                    <span class="choose__item-number">03</span>
+                    <div class="lnr-lock choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+
+                <div class="choose__item">
+                    <span class="choose__item-number">04</span>
+                    <div class="lnr-chart-bars choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+
+                <div class="choose__item">
+                    <span class="choose__item-number">05</span>
+                    <div class="lnr-leaf choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+
+                <div class="choose__item">
+                    <span class="choose__item-number">06</span>
+                    <div class="lnr-phone choose__item-images"></div>
+                    <div class="choose__item-title">
+                        One Time Payment
+                    </div>
+                    <div class="choose__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                        the mattis, leo quam aliquet diam
+                        congue is laoreet elit metus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sell">
+        <div class="sell__inner">
+            <div class="left-box">
+                <div class="box__images"></div>
+                <div class="box__title">
+
+                </div>
+                <div class="box__text">
+
+                </div>
+                <a href="#" class="box__button"></a>
+            </div>
+            <div class="right-box">
+
             </div>
         </div>
     </section>
