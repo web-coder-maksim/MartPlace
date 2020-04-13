@@ -861,7 +861,7 @@
 .box__button-right{
     color: $purple;
 }
-// end
+// end sell
 
 
 // start feedback
@@ -1014,3 +1014,219 @@
     }
 }
 // end about 
+
+
+// start join
+.join{
+    padding: 110px 0;
+    background: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    background: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    background: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+}
+.join__box{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    max-width: 555px;
+}
+.join__box-title{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.join__box-text{
+    font-size: 18px;
+    opacity: .5;
+    margin-bottom: 45px;
+}
+.join__box-link{
+    background-color: #fff;
+    color: $blue;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    padding: 20px 40px;
+}
+// end join
+
+
+// start footer
+.footer__top{
+    background-color: #262b30;
+    padding: 115px 0 120px;
+    color: #ababab;
+    a{
+        color: #ababab;
+        display: inline-block;
+    }
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__item{
+    max-width: 265px;
+    width: 100%;
+}
+.footer__item-logo{
+    margin-bottom: 25px;
+}
+.footer__item-text{
+    line-height: 28px;
+}
+.footer__item-link{
+    padding-left: 27px;
+    position: relative;
+    & + .footer__item-link{
+        margin-top: 22px;
+    }
+    &::before{
+        content: "\e830";
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+        font-size: 16px;
+        color: #fff;
+    }
+}
+.footer__item-tel{
+    margin-top: 25px;
+}
+.footer__item-mail{
+    &::before{
+        content: "\e818";
+    }
+}
+.footer__item-map{
+    line-height: 26px;
+    &::before{
+        top: 13px;
+        content: "\e833";
+    }
+}
+
+.footer__menu{
+    max-width: 165px;
+    width: 100%;
+}
+.footer-item__title{
+    margin: 20px 0 30px;
+    font-size: 18px;
+    color: #fff;
+}
+.footer__menu-items{
+    list-style: none;
+}
+.footer__menu-item{
+    & + .footer__menu-item{
+        margin-top: 20px;
+    }
+}
+
+.footer__news{
+    max-width: 360px;
+    width: 100%;
+}
+.footer__form{
+    margin-top: 25px;
+    position: relative;
+}
+.footer__form-input{
+    min-height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    padding-left: 30px;
+}
+.footer__form-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 25px;
+    border: none;
+    background-color: $blue;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 25px;
+}
+.footer__news-item{
+    list-style: none;
+}
+.footer__news-items{
+    margin-top: 50px;
+}
+.footer__news-item{
+    display: inline-block;
+    & + .footer__news-item{
+        margin-left: 13px;
+    }
+}
+.footer_news-link{
+    background-image: url('../images/social-links.png');
+    width: 42px;
+    height: 42px;
+    position: relative;
+    &::before{
+        content: "\f09a";
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 16px;
+        color: #fff;
+        left: 16px;
+        top: 13px;
+    }
+}
+.link-facebook{
+    background-position: -84px -42px;
+}
+.link-twitter{
+    background-position: -84px -0;
+    &::before{
+        content: '\f099';
+        left: 14px;
+    }
+}
+.link-google{
+    &::before{
+        content: '\f1a0';
+        left: 14px;
+    }
+}
+.link-pinterest{
+    background-position: -42px -0;
+    &::before{
+        content: '\f0d2';
+        left: 14px;
+    }
+}
+.link-linledin{
+    background-position: -0 -42px;
+    &::before{
+        content: '\f0e1';
+        left: 14px;
+    }
+}
+.link-elips{
+    background-position: -42px -42px;
+    &::before{
+        content: '\f17d';
+        left: 14px;
+    }
+}
+
+.footer__bottom{
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #192027;
+}
+.footer__bottom-copy{
+    color: #999999;
+    span{
+        color: #fff;
+    }
+}
+// end footer
